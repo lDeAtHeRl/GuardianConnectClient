@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_gri"
+    android:padding="@dimen/widget_margin"
+    tools:alpha="20">
+
+    <ImageView
+        android:id="@+id/SensorTime_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Calibre_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/takvim"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/SensorDay_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/SensorTime_img"
+        android:layout_alignRight="@+id/SensorTime_img"
+        android:layout_alignBottom="@+id/SensorTime_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-2dp"
+        android:padding="0dp"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Battery_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Sg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Name_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="XXX"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Calibre_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Battery_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/kalibre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="XXXXXXXXXXXXXXX"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/Settings_btn"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:onClick="SETTING_CLICK"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ayarlar" />
+
+    <ImageButton
+        android:id="@+id/Refresh_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Settings_btn"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toStartOf="@+id/Settings_btn"
+        android:layout_toLeftOf="@+id/Settings_btn"
+        android:background="@android:color/transparent"
+        android:onClick="REFRESH_CLICK"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:srcCompat="@mipmap/sync" />
+
+    <TextView
+        android:id="@+id/Date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Trent_img"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/Sg_tv"
+        android:layout_toRightOf="@+id/Sg_tv"
+        android:text="##:##"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/DB"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Settings_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:onClick="DIYABETLIYIZ_CLICK"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/dblogo" />
+
+    <ImageButton
+        android:id="@+id/AllSg_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/DB"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:onClick="SGS_CLICK"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/olcumler"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/Calibre_tv"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/SensorTime_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="false"
+        android:layout_marginVertical="4dp"
+        android:text="XX"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Trent_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Name_tv"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/Sg_tv"
+        android:layout_toRightOf="@+id/Sg_tv"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Battery_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignEnd="@+id/Battery_img"
+        android:layout_alignRight="@+id/Battery_img"
+        android:layout_alignBottom="@+id/Name_tv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-1dp"
+        android:text="XXX"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CalibreStatus_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sg_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="xxxxxxxxxxxxxxxxxx"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GunSaat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SensorDay_tv"
+        android:layout_alignBottom="@+id/SensorDay_tv"
+        android:layout_toEndOf="@+id/SensorTime_img"
+        android:layout_toRightOf="@+id/SensorTime_img"
+        android:text="xxx"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Calibre_tv"
+        android:layout_toEndOf="@+id/Calibre_img"
+        android:layout_toRightOf="@+id/Calibre_img"
+        android:text="Saat"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignEnd="@+id/Battery_img"
+        android:layout_alignRight="@+id/Battery_img"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:text="%"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

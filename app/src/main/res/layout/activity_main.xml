@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SES UYARISI"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/SES_BTN"
+        app:layout_constraintEnd_toStartOf="@+id/SES_BTN"
+        app:layout_constraintTop_toTopOf="@+id/SES_BTN"
+        tools:ignore="RtlCompat" />
+
+    <ToggleButton
+        android:id="@+id/SES_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textOn="AÇIK"
+        android:textOff="KAPALI"
+        app:layout_constraintEnd_toEndOf="@+id/TITRESIM_BTN"
+        app:layout_constraintTop_toBottomOf="@+id/TITRESIM_BTN" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TİTREŞİM UYARISI"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TITRESIM_BTN"
+        app:layout_constraintEnd_toStartOf="@+id/TITRESIM_BTN"
+        app:layout_constraintTop_toTopOf="@+id/TITRESIM_BTN" />
+
+    <EditText
+        android:id="@+id/USERNAME_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/PASSWORD_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/USERNAME_TV"
+        app:layout_constraintTop_toBottomOf="@+id/USERNAME_TV" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="KULLANICI AYARLARI"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/USERNAME_TV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/UST_LIMIT_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="En fazla 200 Mg/l"
+        android:inputType="textPersonName|number"
+        android:singleLine="true"
+        android:text="180"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/OLCUM_TV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/OLCUM_TV"
+        app:layout_constraintTop_toBottomOf="@+id/OLCUM_TV" />
+
+    <EditText
+        android:id="@+id/ALT_LIMIT_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="En az 70 Mg/l"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="90"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/UST_LIMIT_TV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UST_LIMIT_TV"
+        app:layout_constraintTop_toBottomOf="@+id/UST_LIMIT_TV" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ÖLÇÜM"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/OLCUM_TV"
+        app:layout_constraintEnd_toStartOf="@+id/OLCUM_TV"
+        app:layout_constraintTop_toTopOf="@+id/OLCUM_TV"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ÜST LİMİT"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/UST_LIMIT_TV"
+        app:layout_constraintEnd_toStartOf="@+id/UST_LIMIT_TV"
+        app:layout_constraintTop_toTopOf="@+id/UST_LIMIT_TV" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ALT LİMİT"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ALT_LIMIT_TV"
+        app:layout_constraintEnd_toStartOf="@+id/ALT_LIMIT_TV"
+        app:layout_constraintTop_toTopOf="@+id/ALT_LIMIT_TV" />
+
+    <EditText
+        android:id="@+id/OLCUM_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="En Az 5 Dakika"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="5"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:text="USERNAME"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/USERNAME_TV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/USERNAME_TV"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:text="PASSWORD"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/PASSWORD_TV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PASSWORD_TV"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="ÖLÇÜM AYARLARI"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PASSWORD_TV"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/PASSWORD_TV" />
+
+    <ToggleButton
+        android:id="@+id/KAYDET_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:textOff="KAYDET"
+        android:textOn="TEMİZLE"
+        app:layout_constraintEnd_toEndOf="@+id/SES_BTN"
+        app:layout_constraintTop_toBottomOf="@+id/SES_BTN" />
+
+    <ToggleButton
+        android:id="@+id/TITRESIM_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textOn="AÇIK"
+        android:textOff="KAPALI"
+        app:layout_constraintEnd_toEndOf="@+id/ALT_LIMIT_TV"
+        app:layout_constraintTop_toBottomOf="@+id/ALT_LIMIT_TV" />
+
+</android.support.constraint.ConstraintLayout>
